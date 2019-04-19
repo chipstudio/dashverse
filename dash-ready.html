@@ -1,17 +1,17 @@
 <dash-ready definition>
 
-	<template type="text/javascript">
-		var loaded = function () {
-			<inner-html></inner-html>
-		}
+    <template type="text/javascript">
+        var loaded = function () {
+            <inner-html></inner-html>
+        }
 
-		if (document.readyState == "complete" || document.readyState == "loaded") {
-			loaded()
-		} else {
-			window.addEventListener('DOMContentLoaded', function() {
-				loaded()
-			})
-		}
-	</template>
+        if (document.readyState == "complete" || document.readyState == "loaded") {
+            loaded()
+        } else {
+            window.addEventListener('DOMContentLoaded', function() {
+                loaded()
+            })
+        }
+    </template>
 
 </dash-ready>
