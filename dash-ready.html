@@ -2,16 +2,17 @@
 
     <template type="text/javascript">
         var loaded = function () {
-            <inner-html></inner-html>
+        <inner-html></inner-html>
         }
 
         if (document.readyState == "complete" || document.readyState == "loaded") {
-            loaded()
+        loaded()
         } else {
-            window.addEventListener('DOMContentLoaded', function() {
-                loaded()
-            })
+        window.addEventListener('DOMContentLoaded', function() {
+        loaded()
+        })
         }
     </template>
+
 
 </dash-ready>
